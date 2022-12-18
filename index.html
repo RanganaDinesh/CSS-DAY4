@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .head{
+            background-image:url(./sky.jpg);
+            justify-content: center;
+            height: 500px;
+            width: 100%;
+            background-size: cover;
+        }
+        .head1{
+            background-image:url(./sky.jpg);
+            justify-content: center;
+            height: 500px;
+            width: 100%;
+            background-size: cover;
+        }
+       
+        
+        
+        h1{
+            font-size: 100px;
+            text-align: center;
+            padding-top: 150px;
+        }
+        .button1{
+            text-align: center;
+            margin-left: 650px;
+            background-color: black;
+            border-radius: 20px;
+            color: aliceblue;
+            padding: 10px 40px 10px 40px;
+        }
+        .menu{
+           display: flex;
+        }
+        .button2{
+            text-align: center;
+            margin: 10px 20px 10px 20px ;
+            background-color:gray;
+            border-radius: 20px;
+            color: aliceblue;
+            padding: 10px 20px 10px 20px;
+            border: 1px solid white;
+        }
+        .button3{
+            text-align: center;
+            margin: 10px 20px 10px 650px ;
+            background-color:gray;
+            border-radius: 20px;
+            color: aliceblue;
+            padding: 10px 20px 10px 20px;
+            border: 1px solid white;
+        }
+        img{
+            margin-right: 800px;
+            margin-top: 15px;
+            margin-left: 20px;
+            width: 35px;
+            height: 40px;
+            border-radius:50%;
+        }
+        nav{
+            background-color:aliceblue;
+            margin-top: 20px;
+           
+            height: 70px;
+            box-shadow: 0px 0px 20px gray;
+            background-image: linear-gradient( to right, gray, white);
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid gray;
+            box-shadow: 0px 0px 5px gray;
+            margin: 20px;
+
+        }
+        .display4{
+            display: flex;
+        }
+        .dis{
+            width: 200px;
+            height: 200px;
+            border: 1px solid gray;
+            box-shadow: 0px 0px 5px gray;
+            margin: 20px;
+            background-color: green;
+
+        }
+        .card{
+            text-align: center;
+            margin-left: 300px;
+            display: flex;
+            
+            
+        }
+        @media  (min-width:320px) and (max-width:400px){
+            .card{
+                flex-direction: column;
+                font-size: 30px;
+                margin-left: 20px;
+            }
+            .box{
+                width: 300px;
+            height: 300px;
+
+            }
+            .display{
+                display:none;
+            }
+           
+            .button3{
+                background-color: orange;
+                margin-left: 140px;
+            }
+            h1{
+                font-size: 30px;
+            }
+            
+        }
+        @media  (max-width:800px) and (min-width:500px) {
+            .button3{
+                background-color: tomato;
+                margin-left: 350px;
+            }
+            .display{
+                display: none;
+            }
+            .card{
+                margin-left: 40px;
+            }
+            
+        }
+        
+    </style>
+</head>
+<body>
+  <div class="display">
+    <h3>create header -- left side will have logo and right side will have 4 button ?</h3>
+    <div class="nav">
+        <nav>
+           <div class="menu">
+            <img src="./icon.png" alt="">
+            <button class="button2">Home</button>
+           <button class="button2">Menu</button>
+           <button class="button2">Contact US</button>
+           <button class="button2">About us</button>
+          
+           </div>
+           
+        </nav>
+       
+    </div>
+    <div class="head">
+        <h3>create masterhead -add background-image and put a text at the center , with button bellow it ?</h3>
+        <section>
+            <h1>GOOGLE</h1>
+            <button class="button1">Search</button>
+        </section>
+    </div>
+   
+  </div>
+  <h3>create 3 cards of hegiht & width 200px with text in it , the card should be horizontally placed  in web view and vertically in mobile view ?</h3>
+
+    <div class="card">
+        <div class="box"> card-1</div>
+        <div class="box"> card-2</div>
+        <div class="box"> card-3</div>
+    </div>
+
+    <div class="head1">
+        <h3>Replicate the button on masterhead of prepbytes , change the background color of button for mobile view and ipad ?</h3>
+        <section>
+            <h1>PREPBYETS</h1>
+            <button class="button3" ><a href="https://www.prepbytes.com/">PREPBYTES</a></button>
+        </section>
+    </div>
+    <div>
+        <h3>write code to show implementation of flex ?</h3>
+        <pre>
+            The flex container Items display in a row (the flex-direction property's default is row ).
+            .display{
+                display: flex;
+            }
+            .dis{
+                width: 200px;
+                height: 200px;
+                border: 1px solid gray;
+                box-shadow: 0px 0px 5px gray;
+                margin: 20px;
+                background-color: green;
+    
+            }
+            
+        </pre>
+        <div class="display4">
+            <div class="dis"></div>
+            <div class="dis"></div>
+            <div class="dis"></div>
+            
+        </div>
+    </div>
+</body>
+</html>
